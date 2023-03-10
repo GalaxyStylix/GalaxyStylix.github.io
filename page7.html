@@ -1,0 +1,100 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Sen:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <title>Flakes Cinemas</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="logo-container">
+                <h1 class="logo">flakes</h1>
+            </div>
+            <div class="menu-container">
+                <ul class="menu-list">
+                    <li class="menu-list-item active"><a href="page1.html">Home</a></li>
+                    <li class="menu-list-item"><a href="page2.html">Now Playing</a></li>
+                    <li class="menu-list-item"><a href="page3.html">Coming Soon</a></li>
+                    <li class="menu-list-item"><a href="page4.html">Tickets</a></li>
+                    <li class="menu-list-item"><a href="page5.html">Theatres</a></li>
+                    <li class="menu-list-item"><a href="page6.html">Locations</a></li>
+                    <li class="menu-list-item"><a href="page7.html">Booking</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <form action="reservation.php" method="post">
+  <div class="elem-group">
+    <label for="name">Your Name</label>
+    <input type="text" id="name" name="customer_name" placeholder="John Doe" pattern=[A-Z\sa-z]{3,20} required>
+  </div>
+  <div class="elem-group">
+    <label for="email">Your E-mail</label>
+    <input type="email" id="email" name="customer_email" placeholder="john.doe@email.com" required>
+  </div>
+  <div class="elem-group">
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="visitor_phone" placeholder="498-348-3872" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+  </div>
+  <hr>
+  <div class="elem-group inlined">
+    <label for="adult">Adults</label>
+    <input type="number" id="adult" name="total_adults" placeholder="2" min="1" required>
+  </div>
+  <div class="elem-group inlined">
+    <label for="child">Children</label>
+    <input type="number" id="child" name="total_children" placeholder="2" min="0" required>
+  </div>
+  <div class="elem-group center">
+    <label for="movie-date">Movie Date</label>
+    <input type="date" id="movie-date" name="date" required>
+  </div>
+  <div class="elem-group">  
+      <label for="movie-selection">Pick your movie</label>
+    <select id="movie-selection" name="movie-name" required>
+        <option value="">Choose a Movie</option>
+        <option value="Night Owl">Night Owl</option>
+        <option value="Avatar: The Way of Water">Avatar: The Way of Water</option>
+        <option value="Puss in Boots: The Last Wish">Puss in Boots: The Last Wish</option>
+        <option value="Hero">Hero</option>
+        <option value="Broker">Broker</option>
+        <option value="The Point Men">The Point Men</option>
+        <option value="Ant-Man and the Wasp: Quantumania">Ant-Man and the Wasp: Quantumania</option>
+    </select>
+  </div>
+  <hr>
+  <button type="submit">Book Your Tickets</button>
+</form>
+    <footer>
+<div class="footer">
+  <div class="contain">
+  <div class="col">
+    <h2>About Flakes</h2>
+    <ul>
+       <li><a href="page8.html">About us</a></li>
+        <li><a href="page9.html">Contact</a></li>
+    </ul>
+  </div>
+  <div class="col">
+    <h2>Connect With Us</h2>
+    <ul>
+      <li>Facebook</li>
+      <li>Instagram</li>
+      <li>Twitter</li>
+    </ul>
+  </div>
+<div class="clearfix"></div>
+</div>
+</div>
+</footer>
+        <script src="app.js"></script>
+        </body>
+</html>
